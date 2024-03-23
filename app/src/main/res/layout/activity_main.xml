@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.example.exemplografico2.MinhaView
+        android:id="@+id/minha_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/digite_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Digite um valor de 1 a 5:"
+        android:layout_marginBottom="10dip"/>
+
+    <EditText
+        android:id="@+id/edita_text"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:text=""
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <Button
+        android:id="@+id/outro_graf_botao"
+        android:text="Gráfico"
+        android:layout_width="115dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Experimente click e click longo \nna área do gráfico...\n"
+        android:layout_marginBottom="10dip"
+        />
+
+    <Button
+        android:id="@+id/teste_botao"
+        android:text="Click normal e longo\n neste botão"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        />
+
+</LinearLayout>
